@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Resources from './pages/Resources';
 
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} /> {/* 404 */}
         <Route path="/resources" element={<Resources />} />
       </Routes>
     </Router>

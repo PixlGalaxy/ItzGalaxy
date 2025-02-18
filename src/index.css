@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.background404 {
+    opacity: 0.4;
+    background: #ffd000;
+}
+
+/* ####################################################################### */
+/* Animated Lines CSS */
+
+#home {
+    clip-path: url(#cache);
+  }
+  
+#red {
+fill: none;
+opacity: 0.4;
+stroke: #ffdd00;
+stroke-width: 12;
+stroke-miterlimit:10;
+animation: show 4s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out; 
+}
+
+#blue {
+fill: none;
+opacity: 0.4;
+stroke: #ff7b00;
+stroke-width: 12;
+stroke-miterlimit:10;
+animation: show 4s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+#light-blue {
+fill: none;
+opacity: 0.4;
+stroke: #00ff9d;
+stroke-width: 6;
+stroke-miterlimit:10;
+stroke-dasharray: 200;
+stroke-dashoffset: 800;
+animation: draw 4s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;    
+}
+
+@keyframes draw {
+to {
+    stroke-dashoffset: 0;
+}
+    }
+
+@keyframes show {
+0% {
+    opacity: 0.4;
+}
+50% {
+    opacity: 0.7;
+}
+100% {
+    opacity: 0.4;
+}
+    }  
+    
+/* ####################################################################### */
