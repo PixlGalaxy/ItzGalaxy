@@ -72,3 +72,11 @@ to {
     }  
     
 /* ####################################################################### */
+/* Fonts */
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url("/fonts/Oswald-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
