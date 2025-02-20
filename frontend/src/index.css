@@ -2,10 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .background404 {
     opacity: 0.4;
     background: #ffd000;
+}
+
+.navbar-mobile {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+}
+
+.navbar-mobile.active {
+    max-height: 200px;
+    padding-bottom: 10px; 
+}
+
+.navbar-link {
+    padding: 10px 0;
 }
 
 /* ####################################################################### */
