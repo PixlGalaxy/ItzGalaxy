@@ -6,8 +6,9 @@ import Footer from '../components/Footer';
 const Home: React.FC = () => {
   return (
     <div className="bg-blue-500 min-h-screen flex flex-col">
+      {/* El componente Navbar se importa automáticamente */}
 
-      <div className="flex-grow pt-20 container mx-auto px-4">
+      <div className="flex-grow pt-28 container mx-auto px-4">
         {/* Línea horizontal separadora */}
         <hr className="border-t border-gray-300 my-4" />
 
@@ -45,8 +46,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer />
-
     </div>
   );
 };
