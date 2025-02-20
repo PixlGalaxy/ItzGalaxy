@@ -9,13 +9,17 @@ import Resources from './pages/Resources';
 const App: React.FC = () => {
   return (
     <Router>
-      <Navbar />
-      <Footer />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} /> {/* 404 */}
-        <Route path="/resources" element={<Resources />} />
-      </Routes>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 };
