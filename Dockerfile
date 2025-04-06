@@ -20,7 +20,7 @@ COPY --from=build-frontend /app/frontend/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expose Ports 
-EXPOSE 5000
+EXPOSE 5001
 
 # Start Commands
 CMD ["sh", "-c", "nginx -g 'daemon off;'"]
