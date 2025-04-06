@@ -23,4 +23,4 @@ COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 5000
 
 # Start Commands
-CMD ["sh", "-c", "node /app/backend/server.js & nginx -g 'daemon off;'"]
+CMD ["sh", "-c", "nginx -g 'daemon off;'"]
