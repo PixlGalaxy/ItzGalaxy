@@ -1,15 +1,26 @@
-FROM node:18-alpine AS build
-WORKDIR /app
-
-COPY package.json package-lock.json ./
+# Frontend Build
+FROM node:18-alpine AS build-frontend
+WORKDIR /app/frontend
+COPY frontend/package.json frontend/package-lock.json ./
 RUN npm install
-
-COPY . .
+COPY frontend ./
 RUN npm run build
 
-FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Final Image Nginx And Node.js
+FROM node:18-alpine
+WORKDIR /app
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Install Nginx
+RUN apk add --no-cache nginx
+
+# Copy Frontend To Nginx Dir
+COPY --from=build-frontend /app/frontend/dist /usr/share/nginx/html
+
+# Copy Nginx Config
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Expose Ports 
+EXPOSE 5000
+
+# Start Commands
+CMD ["sh", "-c", "node /app/backend/server.js & nginx -g 'daemon off;'"]
