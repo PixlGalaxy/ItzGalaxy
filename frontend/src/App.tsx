@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Resources from './pages/Resources';
 import DurazznoApp from './pages/DurazznoApp';
 import Pixl from './pages/Pixl';
+import PixlTOS from './pages/Pixltos';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
             <Route path="/resources" element={<Resources />} />
             <Route path="/durazznoapp" element={<DurazznoApp />} />
             <Route path="/pixl" element={<Pixl />} />
+            <Route path="/pixl-tos" element={<PixlTOS />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
