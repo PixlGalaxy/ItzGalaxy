@@ -96,7 +96,76 @@ to {
 
 @font-face {
     font-family: Oswald-Bold;
-    src: url("/fonts/Oswald-Bold.ttf") format("truetype");
+    src: url("./assets/fonts/Oswald-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'LGSBE';
+    src: url('./assets/fonts/lgsbe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+/* ####################################################################### */
+/* Buttons */
+
+.itzgalaxy-action-buttons {
+    background-color: #00ffae;
+    color: black;
+    font-family: 'LGSBE', sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    padding: 0.8rem 0;
+    border: 2px solid black;
+    transform: skew(-30deg);
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .itzgalaxy-action-buttons span {
+    display: inline-block;
+    transform: skew(30deg);
+    white-space: nowrap;
+    line-height: 1;
+    position: relative;
+    top: -6px;
+  }  
+  
+  .itzgalaxy-action-buttons:hover {
+    background-color: #00e39b; 
+    transform: skew(-30deg) scale(1.03); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+  
+@media (max-width: 1024px) {
+    .itzgalaxy-action-buttons {
+      font-size: 28px;
+      padding: 0.7rem 6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .itzgalaxy-action-buttons {
+      font-size: 22px;
+      padding: 0.6rem 4rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .itzgalaxy-action-buttons {
+      font-size: 18px;
+      padding: 0.5rem 2rem;
+    }
+  }
+  
