@@ -4,7 +4,6 @@ import * as LucideIcons from 'lucide-react';
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
-
       <title>ItzGalaxy - Home</title>
 
       {/* Dev Page Section */}
@@ -15,15 +14,10 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-white opacity-10 z-0" />
         <div className="relative z-10 container mx-auto flex flex-col items-center justify-center text-center space-y-6">
           <LucideIcons.AlertTriangle className="w-16 h-16 text-yellow-400" strokeWidth={2} />
-          <h2 className="text-2xl md:text-4xl font-bold">
-            This page is still under development.
-          </h2>
-          <h1>
-            Some pages may not work as expected.
-          </h1>
+          <h2 className="text-2xl md:text-4xl font-bold">This page is still under development.</h2>
+          <h1>Some pages may not work as expected.</h1>
         </div>
       </section>
-
 
       {/* ItzGalaxy Title Section */}
       <section
@@ -36,14 +30,9 @@ const Home: React.FC = () => {
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
               A SHIFT TO SOMETHING<br />WITH MORE POTENTIAL!
             </h1>
-            <div className="w-2/3 h-1 bg-cyan-400 mt-2" />
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <img
-              src="ItzGalaxy_CLR.png"
-              alt="ItzGalaxy"
-              className="w-64 md:w-80"
-            />
+            <img src="ItzGalaxy_CLR.png" alt="ItzGalaxy" className="w-64 md:w-80" />
           </div>
         </div>
       </section>
@@ -56,11 +45,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-white opacity-10 z-0" />
         <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-            <img
-              src="/DurazznoApp/Durazzno.png"
-              alt="Durazzno icon"
-              className="w-64 md:w-80"
-            />
+            <img src="/DurazznoApp/Durazzno.png" alt="Durazzno icon" className="w-64 md:w-80" />
           </div>
           <div className="md:w-1/2 space-y-4 px-4">
             <h2 className="text-2xl md:text-4xl font-bold">
@@ -82,7 +67,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Resources Section */}
+      {/* PIXL Bot Section */}
       <section
         className="relative text-black py-12 px-4 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: 'url("/backgrounds/GreenBackground.png")' }}
@@ -91,28 +76,47 @@ const Home: React.FC = () => {
         <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0 px-4 space-y-4">
             <h2 className="text-2xl md:text-4xl font-bold">
-            Looking For Something? <br />
-            Check Out The Resources Page.
+              Meet PIXL – The Ultimate Discord Bot
             </h2>
             <p className="text-base md:text-lg">
-            Access everything from Discord bots, Durazzno App, ItzGalaxy Minecraft Network, Minecraft World files and more. 
-            All files and links in one place.
+              PIXL is a multifunctional Discord bot that combines powerful moderation tools and a full music system using Spotify and YouTube. 
+              Use it to play music, kick, ban, warn and manage your Discord server with ease.
+            </p>
+            <div style={{ textAlign: 'center' }}>
+              <a href="/pixl" className="itzgalaxy-action-buttons block text-center">
+                <span>Explore PIXL Bots</span>
+              </a>
+            </div>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <img src="/Pixl/Pixl.png" alt="PIXL" className="w-64 md:w-80" />
+          </div>
+        </div>
+      </section>
+
+      {/* Resources Section */}
+      <section
+        className="relative text-black py-12 px-4 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url("/backgrounds/BlueBackground.png")' }}
+      >
+        <div className="absolute inset-0 bg-white opacity-10 z-0" />
+        <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
+          <div className="md:w-1/2 flex justify-center">
+            <LucideIcons.Server className="w-64 md:w-80 h-64 md:h-80 text-black" strokeWidth={1.5} />
+          </div>
+          <div className="md:w-1/2 mb-8 md:mb-0 px-4 space-y-4">
+            <h2 className="text-2xl md:text-4xl font-bold">
+              Looking For Something Else?
+            </h2>
+            <p className="text-base md:text-lg">
+              Access all ItzGalaxy tools in one place: bot links, Minecraft world files, Durazzno App, and more.
             </p>
             <div style={{ textAlign: 'center' }}>
               <a href="/resources" className="itzgalaxy-action-buttons block text-center">
                 <span>ItzGalaxy Resources Page</span>
               </a>
             </div>
-
           </div>
-
-          <div className="md:w-1/2 flex justify-center">
-            <LucideIcons.Server
-              className="w-64 md:w-80 h-64 md:h-80 text-black"
-              strokeWidth={1.5}
-            />
-          </div>
-
         </div>
       </section>
 
