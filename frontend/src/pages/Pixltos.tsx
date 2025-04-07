@@ -120,7 +120,13 @@ const PixlTOS: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-extrabold">Thank You For Using PIXL.</h2>
             </div>
         </section>
+        <footer className="bg-white bg-opacity-50 backdrop-blur-md text-black text-left px-4 py-4 z-10">
+            <p>
+            &copy; {new Date().getFullYear()} ItzGalaxy.com | Itz Galaxy Web Services | All Rights Reserved.
+            </p>
+        </footer>
         </div>
+        
   );
 };
 

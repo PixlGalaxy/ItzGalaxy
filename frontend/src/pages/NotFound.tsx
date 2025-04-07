@@ -162,6 +162,11 @@ const NotFound: React.FC = () => {
       <footer className="w-full py-2 text-right pr-4 text-black-700 text-sm">
         ArtWork By PulexArt
       </footer>
+      <footer className="bg-white bg-opacity-50 backdrop-blur-md text-black text-left px-4 py-4 z-10">
+        <p>
+          &copy; {new Date().getFullYear()} ItzGalaxy.com | Itz Galaxy Web Services | All Rights Reserved.
+        </p>
+      </footer>
     </div>
   );
 };
