@@ -55,7 +55,7 @@ const Home: React.FC = () => {
         <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
             <img
-              src="Durazzno.png"
+              src="/DurazznoApp/Durazzno.png"
               alt="Durazzno icon"
               className="w-64 md:w-80"
             />
