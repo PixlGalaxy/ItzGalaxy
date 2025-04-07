@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Resources from './pages/Resources';
 import DurazznoApp from './pages/DurazznoApp';
+import Pixl from './pages/Pixl';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/durazznoapp" element={<DurazznoApp />} />
+            <Route path="/pixl" element={<Pixl />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
