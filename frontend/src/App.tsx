@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Resources from './pages/Resources';
+import DurazznoApp from './pages/DurazznoApp';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/durazznoapp" element={<DurazznoApp />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
