@@ -7,6 +7,7 @@ import Resources from './pages/Resources';
 import DurazznoApp from './pages/DurazznoApp';
 import Pixl from './pages/Pixl';
 import PixlTOS from './pages/Pixltos';
+import ItzGalaxyMCNetwork from './pages/ItzGalaxyMCNetwork';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
             <Route path="/durazznoapp" element={<DurazznoApp />} />
             <Route path="/pixl" element={<Pixl />} />
             <Route path="/pixl-tos" element={<PixlTOS />} />
+            <Route path="/itzgalaxymcnetwork" element={<ItzGalaxyMCNetwork />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
