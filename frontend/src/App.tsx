@@ -9,7 +9,7 @@ import Resources from './pages/Resources';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screenflex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
           <Routes>
