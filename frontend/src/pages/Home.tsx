@@ -5,6 +5,8 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
 
+      <title>ItzGalaxy - Home</title>
+
       {/* Dev Page Section */}
       <section
         className="relative text-white py-12 px-4 pt-20 bg-cover bg-center bg-no-repeat"
