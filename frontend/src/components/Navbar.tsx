@@ -8,11 +8,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 shadow-sm backdrop-blur-sm z-50 navbar-color" style={{ fontFamily: 'Oswald-Bold' }}>
-      <div className="mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="mx-auto px-4 py-1 flex items-center justify-between">
 
         {/* Logo and Label */}
         <div className="flex items-center space-x-4">
-          <Link to="/" className="logo w-10 h-10 flex-shrink-0">
+          <Link to="/" className="logo w-14 h-14 flex-shrink-0">
             <img src="ItzGalaxy_BW.png" alt="Logo"></img>
           </Link>
           <span className="text-blck-300"><strong>ItzGalaxy.com</strong></span>
