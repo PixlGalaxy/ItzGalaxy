@@ -8,6 +8,7 @@ import DurazznoApp from './pages/DurazznoApp';
 import Pixl from './pages/Pixl';
 import PixlTOS from './pages/Pixltos';
 import ItzGalaxyMCNetwork from './pages/ItzGalaxyMCNetwork';
+import Terminal from './pages/Terminal';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/pixl" element={<Pixl />} />
             <Route path="/pixl-tos" element={<PixlTOS />} />
             <Route path="/itzgalaxymcnetwork" element={<ItzGalaxyMCNetwork />} />
+            <Route path="/terminal" element={<Terminal />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

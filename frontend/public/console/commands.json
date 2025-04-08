@@ -1,0 +1,52 @@
+{
+    "downloads": {
+      "_type": "dir",
+      "durazznoapp": {
+        "type": "file",
+        "url": "https://example.com/DurazznoApp.zip",
+        "desc": "Portable Durazzno App"
+      },
+      "pixl": {
+        "type": "file",
+        "url": "https://example.com/PIXL.zip",
+        "desc": "PIXL self‑hosted build"
+      },
+      "tools": {
+        "type": "dir",
+        "minitool": {
+          "type": "file",
+          "url": "https://example.com/MiniTool.exe",
+          "desc": "Small helper tool"
+        }
+      }
+    },
+  
+    "installers": {
+      "_type": "dir",
+      "docker": {
+        "type": "link",
+        "url": "https://docs.docker.com/get-docker/",
+        "desc": "Docker installer"
+      },
+      "nodejs": {
+        "type": "link",
+        "url": "https://nodejs.org/en/download",
+        "desc": "Node.js LTS installer"
+      }
+    },
+  
+    "docs": {
+      "_type": "dir",
+      "api": {
+        "type": "link",
+        "url": "https://itzgalaxy.com/docs/api",
+        "desc": "REST API docs"
+      },
+      "pixlcommands": {
+        "type": "file",
+        "url": "https://itzgalaxy.com/docs/pixl-commands.pdf",
+        "desc": "PIXL command reference (PDF)"
+      }
+    }
+  }
+  
