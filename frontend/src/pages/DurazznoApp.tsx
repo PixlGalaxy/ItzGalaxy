@@ -5,10 +5,10 @@ const DurazznoApp: React.FC = () => (
 
     {/* Durazzno App Page Title Section */}
     <section className="relative text-black py-16 px-4 pt-24 bg-cover bg-center"
-             style={{ backgroundImage: 'url("/backgrounds/CyanBackground.png")' }}>
+             style={{ backgroundImage: 'url("/backgrounds/CyanBackground.webp")' }}>
       <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 flex justify-center mb-8 md:mb-0 order-1">
-          <img src="/DurazznoApp/Durazzno.png" className="w-64 md:w-80" />
+          <img src="/DurazznoApp/Durazzno.webp" className="w-64 md:w-80" />
         </div>
         <div className="md:w-1/2 px-4 order-2">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -24,7 +24,7 @@ const DurazznoApp: React.FC = () => (
 
     {/* Durazzno Terminal Section */}
     <section className="relative text-black py-16 px-4 bg-cover bg-center"
-             style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.png")' }}>
+             style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.webp")' }}>
       <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 px-4 mb-8 md:mb-0 order-1">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -35,17 +35,17 @@ const DurazznoApp: React.FC = () => (
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center order-2">
-          <img src="/DurazznoApp/terminal.png" className="w-64 md:w-80" />
+          <img src="/DurazznoApp/terminal.webp" className="w-64 md:w-80" />
         </div>
       </div>
     </section>
 
     {/* Crystal Disk Section */}
     <section className="relative text-black py-16 px-4 bg-cover bg-center"
-             style={{ backgroundImage: 'url("/backgrounds/YellowBackground.png")' }}>
+             style={{ backgroundImage: 'url("/backgrounds/YellowBackground.webp")' }}>
       <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 flex justify-center mb-8 md:mb-0 order-1">
-          <img src="/DurazznoApp/cdisk.png" className="w-64 md:w-80" />
+          <img src="/DurazznoApp/cdisk.webp" className="w-64 md:w-80" />
         </div>
         <div className="md:w-1/2 px-4 order-2">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -60,7 +60,7 @@ const DurazznoApp: React.FC = () => (
 
     {/* Durazzno App Store Section */}
     <section className="relative text-black py-16 px-4 bg-cover bg-center"
-             style={{ backgroundImage: 'url("/backgrounds/GreenBackground.png")' }}>
+             style={{ backgroundImage: 'url("/backgrounds/GreenBackground.webp")' }}>
       <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 px-4 mb-8 md:mb-0 order-1">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -71,18 +71,18 @@ const DurazznoApp: React.FC = () => (
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center order-2">
-          <img src="/DurazznoApp/appstore.png" className="w-64 md:w-80" />
+          <img src="/DurazznoApp/appstore.webp" className="w-64 md:w-80" />
         </div>
       </div>
     </section>
 
     {/* Download Section */}
     <section className="relative text-black py-20 px-4 bg-cover bg-center"
-             style={{ backgroundImage: 'url("/backgrounds/YellowBackground.png")' }}>
+             style={{ backgroundImage: 'url("/backgrounds/YellowBackground.webp")' }}>
       <div className="absolute inset-0 bg-white opacity-10 z-0" />
       <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 flex justify-center mb-8 md:mb-0 order-1">
-          <img src="/DurazznoApp/Durazzno.png" className="w-64 md:w-80" />
+          <img src="/DurazznoApp/Durazzno.webp" className="w-64 md:w-80" />
         </div>
         <div className="md:w-1/2 px-4 space-y-8 order-2 text-center md:text-left">
           <h2 className="text-3xl md:text-5xl font-bold">

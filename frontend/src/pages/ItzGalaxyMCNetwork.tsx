@@ -10,7 +10,7 @@ const ItzGalaxyMCNetwork: React.FC = () => {
         {/* Dev Page Section */}
         <section
           className="relative text-white py-12 px-4 pt-20 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/backgrounds/RedBackground.png")' }}
+          style={{ backgroundImage: 'url("/backgrounds/RedBackground.webp")' }}
         >
           <div className="absolute inset-0 bg-white opacity-10 z-0" />
           <div className="relative z-10 container mx-auto flex flex-col items-center justify-center text-center space-y-6">

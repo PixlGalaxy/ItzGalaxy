@@ -3,22 +3,22 @@ import React from 'react';
 const bots = [
   {
     name: 'PIXL Cyan',
-    image: '/Pixl/Cyan.png',
+    image: '/Pixl/Cyan.webp',
     invite: 'https://discord.com/oauth2/authorize?client_id=881730763907792907&permissions=240555248960&scope=bot',
   },
   {
     name: 'PIXL Red',
-    image: '/Pixl/Red.png',
+    image: '/Pixl/Red.webp',
     invite: 'https://discord.com/oauth2/authorize?client_id=889492220519010325&permissions=240555248960&scope=bot',
   },
   {
     name: 'PIXL Purple',
-    image: '/Pixl/Purple.png',
+    image: '/Pixl/Purple.webp',
     invite: 'https://discord.com/oauth2/authorize?client_id=913215822867099710&permissions=240555248960&scope=bot',
   },
   {
     name: 'PIXL Black',
-    image: '/Pixl/Black.png',
+    image: '/Pixl/Black.webp',
     invite: 'https://discord.com/oauth2/authorize?client_id=913218158482063390&permissions=240555248960&scope=bot',
   },
 ];
@@ -32,7 +32,7 @@ const Pixl: React.FC = () => {
     {/* Header */}
     <section
     className="relative text-white py-20 px-4 pt-24 text-center bg-cover bg-center"
-    style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.png")' }}
+    style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.webp")' }}
     >
     <div className="absolute inset-0 bg-white opacity-10 z-0" />
     <div className="relative z-10">
@@ -44,7 +44,7 @@ const Pixl: React.FC = () => {
     {/* Bots Grid */}
     <section
     className="relative text-black py-16 px-4 bg-cover bg-center"
-    style={{ backgroundImage: 'url("/backgrounds/YellowBackground.png")' }}
+    style={{ backgroundImage: 'url("/backgrounds/YellowBackground.webp")' }}
     >
     <div className="relative z-10 container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
         {bots.map((bot, idx) => (

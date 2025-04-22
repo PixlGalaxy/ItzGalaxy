@@ -8,7 +8,7 @@ const PixlTOS: React.FC = () => {
         {/* Header */}
         <section
             className="relative text-white py-12 px-4 pt-20 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.png")' }}
+            style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.webp")' }}
         >
             <div className="absolute inset-0 bg-white opacity-10 z-0" />
             <div className="relative z-10 container mx-auto text-center">
@@ -116,7 +116,7 @@ const PixlTOS: React.FC = () => {
 
             {/* Thank You Section */}
             <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-4">
-            <img src="/Other/GalaxyPC.png" alt="Galaxy Sticker" className="w-40 h-auto" />
+            <img src="/Other/GalaxyPC.webp" alt="Galaxy Sticker" className="w-40 h-auto" />
             <h2 className="text-3xl md:text-4xl font-extrabold">Thank You For Using PIXL.</h2>
             </div>
         </section>

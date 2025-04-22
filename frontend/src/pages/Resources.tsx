@@ -11,7 +11,7 @@ const ResourcesPage: React.FC = () => {
         {/* Header Section */}
         <section
           className="relative text-white py-20 px-4 pt-36 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(\"/backgrounds/PurpleBackground.png\")' }}
+          style={{ backgroundImage: 'url(\"/backgrounds/PurpleBackground.webp\")' }}
         >
           <div className="absolute inset-0 bg-white opacity-10 z-0" />
           <div className="relative z-10 text-center">
@@ -23,7 +23,7 @@ const ResourcesPage: React.FC = () => {
         {/* Resources Grid */}
         <section
           className="relative bg-cover bg-center bg-no-repeat text-black py-8 px-6 flex-1"
-          style={{ backgroundImage: 'url(\"/backgrounds/GreenBackground.png\")' }}
+          style={{ backgroundImage: 'url(\"/backgrounds/GreenBackground.webp\")' }}
         >
           <div className="absolute inset-0 bg-white opacity-10 z-0" />
           <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -31,7 +31,7 @@ const ResourcesPage: React.FC = () => {
             {/* PIXL */}
             <a href="/pixl" className="space-y-4 hover:scale-105 transition-transform duration-300">
               <img
-                src="/Pixl/Cyan.png"
+                src="/Pixl/Cyan.webp"
                 alt="PIXL"
                 className="w-40 h-40 md:w-56 md:h-56 mx-auto"
               />
@@ -41,7 +41,7 @@ const ResourcesPage: React.FC = () => {
             {/* Minecraft Network */}
             <a href="/itzgalaxymcnetwork" className="space-y-4 hover:scale-105 transition-transform duration-300">
               <img
-                src="/Minecraft/GrassBlock.png"
+                src="/Minecraft/GrassBlock.webp"
                 alt="Minecraft Network"
                 className="w-40 h-40 md:w-56 md:h-56 mx-auto"
               />
@@ -51,7 +51,7 @@ const ResourcesPage: React.FC = () => {
             {/* Durazzno App */}
             <a href="/durazznoapp" className="space-y-4 hover:scale-105 transition-transform duration-300">
               <img
-                src="/DurazznoApp/Durazzno.png"
+                src="/DurazznoApp/Durazzno.webp"
                 alt="Durazzno App"
                 className="w-40 h-40 md:w-56 md:h-56 mx-auto"
               />
@@ -66,7 +66,7 @@ const ResourcesPage: React.FC = () => {
               className="space-y-4 hover:scale-105 transition-transform duration-300"
             >
               <img
-                src="/Minecraft/DiamondOreBlock.png"
+                src="/Minecraft/DiamondOreBlock.webp"
                 alt="World Files"
                 className="w-40 h-40 md:w-56 md:h-56 mx-auto"
               />

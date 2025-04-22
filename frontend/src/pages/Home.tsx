@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         {/* ItzGalaxy Title Section */}
         <section
           className="relative text-white py-12 px-4 pt-20 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.png")' }}
+          style={{ backgroundImage: 'url("/backgrounds/PurpleBackground.webp")' }}
         >
           <div className="absolute inset-0 bg-white opacity-10 z-0" />
           <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
               </h1>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <img src="ItzGalaxy_CLR.png" alt="ItzGalaxy" className="w-64 md:w-80" />
+              <img src="ItzGalaxy_CLR.webp" alt="ItzGalaxy" className="w-64 md:w-80" />
             </div>
           </div>
         </section>
@@ -28,12 +28,12 @@ const Home: React.FC = () => {
         {/* Durazzno App Section */}
         <section
           className="relative text-black py-12 px-4 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/backgrounds/YellowBackground.png")' }}
+          style={{ backgroundImage: 'url("/backgrounds/YellowBackground.webp")' }}
         >
           <div className="absolute inset-0 bg-white opacity-10 z-0" />
           <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-              <img src="/DurazznoApp/Durazzno.png" alt="Durazzno icon" className="w-64 md:w-80" />
+              <img src="/DurazznoApp/Durazzno.webp" alt="Durazzno icon" className="w-64 md:w-80" />
             </div>
             <div className="md:w-1/2 space-y-4 px-4">
               <h2 className="text-2xl md:text-4xl font-bold">
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
         {/* PIXL Bot Section */}
         <section
           className="relative text-black py-12 px-4 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/backgrounds/GreenBackground.png")' }}
+          style={{ backgroundImage: 'url("/backgrounds/GreenBackground.webp")' }}
         >
           <div className="absolute inset-0 bg-white opacity-10 z-0" />
           <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <img src="/Pixl/Pixl.png" alt="PIXL" className="w-64 md:w-80" />
+              <img src="/Pixl/Pixl.webp" alt="PIXL" className="w-64 md:w-80" />
             </div>
           </div>
         </section>
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
         {/* Resources Section */}
         <section
           className="relative text-black py-12 px-4 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url("/backgrounds/BlueBackground.png")' }}
+          style={{ backgroundImage: 'url("/backgrounds/BlueBackground.webp")' }}
         >
           <div className="absolute inset-0 bg-white opacity-10 z-0" />
           <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between">
