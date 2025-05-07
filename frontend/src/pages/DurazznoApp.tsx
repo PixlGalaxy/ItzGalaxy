@@ -88,9 +88,11 @@ const DurazznoApp: React.FC = () => (
           <h2 className="text-3xl md:text-5xl font-bold">
             DOWNLOAD DURAZZNO APP
           </h2>
-          <button className="itzgalaxy-action-buttons">
-            <span>Download Durazzno App</span>
-          </button>
+          <div>
+            <a href="https://webincloud.itzgalaxy.com/public/file/ahqBJGCZJUGaQ_a8NtVOCA/Durazzno%20App%20Install%20Bundle.zip" className="itzgalaxy-action-buttons block text-center">
+              <span>Download Durazzno App</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
