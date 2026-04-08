@@ -182,6 +182,13 @@ const About: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
+                    <LucideIcons.CircuitBoard className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" strokeWidth={1.5} />
+                    <div>
+                      <span className="font-semibold text-gray-800">Motherboard</span>
+                      <p className="text-gray-600">HUANANZHI X99-F8D PLUS</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
                     <LucideIcons.MemoryStick className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" strokeWidth={1.5} />
                     <div>
                       <span className="font-semibold text-gray-800">RAM</span>
