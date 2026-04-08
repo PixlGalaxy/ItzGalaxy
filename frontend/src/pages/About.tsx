@@ -198,9 +198,9 @@ const About: React.FC = () => {
                   <div className="flex items-start gap-3">
                     <LucideIcons.Monitor className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" strokeWidth={1.5} />
                     <div>
-                      <span className="font-semibold text-gray-800">GPUs</span>
+                      <span className="font-semibold text-gray-800">GPU</span>
                       <p className="text-gray-600">
-                        RX 7900 XTX — AI, embeddings &amp; encode/decode <span className="text-xs text-violet-500 font-medium">(ROCm)</span>
+                        RX 7900 XTX — AI, Embeddings &amp; Encode/Decode <span className="text-xs text-violet-500 font-medium">(ROCm)</span>
                       </p>
                       <p className="text-gray-600">
                         RTX 3060 12 GB — dedicated CUDA VM <span className="text-xs text-green-500 font-medium">(CUDA)</span>
@@ -237,7 +237,7 @@ const About: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-extrabold text-gray-900">Ryzhell</h3>
-                    <span className="text-xs font-semibold text-violet-600 bg-violet-50 px-2 py-0.5 rounded-full">The Workhorse</span>
+                    <span className="text-xs font-semibold text-violet-600 bg-violet-50 px-2 py-0.5 rounded-full">The Speedster</span>
                   </div>
                 </div>
 
@@ -276,7 +276,7 @@ const About: React.FC = () => {
                     <LucideIcons.Network className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" strokeWidth={1.5} />
                     <div>
                       <span className="font-semibold text-gray-800">Network</span>
-                      <p className="text-gray-600">10 Gb/s NIC</p>
+                      <p className="text-gray-600">10 Gb/s NIC — Fiber Optic</p>
                     </div>
                   </div>
                 </div>
@@ -288,7 +288,7 @@ const About: React.FC = () => {
           <div className="mt-6 flex flex-wrap justify-center gap-3 anim-fade-up anim-delay-3">
             {[
               { icon: <LucideIcons.Container className="w-3.5 h-3.5" />, label: 'Unraid OS' },
-              { icon: <LucideIcons.Wifi className="w-3.5 h-3.5" />, label: '10Gb/s LAN' },
+              { icon: <LucideIcons.Network className="w-3.5 h-3.5" />, label: '10Gb/s LAN' },
               { icon: <LucideIcons.Shield className="w-3.5 h-3.5" />, label: 'RAID Storage' },
               { icon: <LucideIcons.Gauge className="w-3.5 h-3.5" />, label: 'NVMe Arrays' },
             ].map((b) => (
