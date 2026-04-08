@@ -107,7 +107,17 @@ to {
     font-weight: normal;
     font-style: normal;
 }
-  
+
+@font-face {
+  font-family: 'RaceSpace';
+  src: url('/fonts/RaceSpace.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.race-font {
+  font-family: 'RaceSpace', sans-serif;
+}
+
 /* ####################################################################### */
 /* Buttons */
 
