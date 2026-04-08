@@ -25,7 +25,7 @@
 }
 
 .navbar-color {
-    background-color: #78ffbc;
+    background-color: #0c0a1a;
 }
 
 /* ####################################################################### */
@@ -178,4 +178,207 @@ to {
       padding: 0.5rem 2rem;
     }
   }
-  
+
+/* ####################################################################### */
+/* Page Animations */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes borderPulse {
+  0%, 100% { border-color: rgba(255, 255, 255, 0.2); }
+  50%       { border-color: rgba(255, 255, 255, 0.65); }
+}
+
+@keyframes scanline {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.anim-fade-up {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.anim-slide-left {
+  animation: slideInLeft 0.8s ease-out both;
+}
+
+.anim-slide-right {
+  animation: slideInRight 0.8s ease-out both;
+}
+
+.anim-float {
+  animation: floatAnim 3.5s ease-in-out infinite;
+}
+
+.anim-delay-1 { animation-delay: 0.1s; }
+.anim-delay-2 { animation-delay: 0.2s; }
+.anim-delay-3 { animation-delay: 0.3s; }
+.anim-delay-4 { animation-delay: 0.4s; }
+.anim-delay-5 { animation-delay: 0.5s; }
+
+/* Animated gradient bar for section titles */
+.section-title-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00ffae, #78ffbc, #00d4ff, #78ffbc, #00ffae);
+  background-size: 300% 100%;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Animated IP/code box */
+.ip-box-animated {
+  animation: borderPulse 2s ease-in-out infinite;
+}
+
+/* Terminal blinking cursor */
+.terminal-cursor {
+  display: inline-block;
+  width: 9px;
+  height: 1.1em;
+  background-color: #4ade80;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+
+/* Navbar link hover underline */
+.nav-link-animated {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #00ffae;
+  transition: width 0.3s ease;
+}
+
+.nav-link-animated:hover::after {
+  width: 100%;
+}
+
+/* Dot pattern overlay for dark hero sections */
+.dot-pattern {
+  background-image: radial-gradient(rgba(0, 255, 174, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Grid pattern for light sections */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Diagonal clip bottom for hero sections */
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  padding-bottom: 5rem;
+}
+
+/* Dark hero background */
+.bg-hero-dark {
+  background: linear-gradient(135deg, #0c0a1a 0%, #1a0e3c 45%, #0a1a10 100%);
+}
+
+/* Section accent border */
+.section-accent-left {
+  border-left: 4px solid #00ffae;
+  padding-left: 1.25rem;
+}
+
+/* Feature icon circle */
+.feature-icon-circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.feature-icon-circle:hover {
+  transform: scale(1.12) rotate(6deg);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* Terminal scanline overlay */
+.terminal-scanline::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
