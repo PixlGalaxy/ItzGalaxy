@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
+import About from './pages/About';
 import Resources from './pages/Resources';
 import DurazznoApp from './pages/DurazznoApp';
 import Pixl from './pages/Pixl';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/durazznoapp" element={<DurazznoApp />} />
             <Route path="/pixl" element={<Pixl />} />
