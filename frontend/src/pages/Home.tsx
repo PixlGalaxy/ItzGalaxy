@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <main className="flex-1">
 
         {/* ── Hero ────────────────────────────────────────────────────── */}
-        <section className="relative bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
+        <section className="relative z-10 bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
           {/* Dot pattern overlay */}
           <div className="dot-pattern absolute inset-0 opacity-60 pointer-events-none" />
           {/* Decorative orbs */}
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         </section>
 
         {/* ── Durazzno App ────────────────────────────────────────────── */}
-        <section className="relative bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 text-black py-20 px-6 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 text-black py-20 px-6 overflow-hidden -mt-20 pt-40">
           <div className="grid-pattern absolute inset-0 pointer-events-none" />
           <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-yellow-300 opacity-20 blur-3xl pointer-events-none" />
           <div className="relative z-10 container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-12">
