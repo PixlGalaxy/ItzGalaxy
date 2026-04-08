@@ -45,7 +45,7 @@ const ItzGalaxyMCNetwork: React.FC = () => {
       <main className="flex-1">
 
         {/* ── Hero ─────────────────────────────────────────────────────── */}
-        <section className="relative bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
+        <section className="relative z-10 bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
           <div className="dot-pattern absolute inset-0 opacity-50 pointer-events-none" />
           <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-emerald-400 opacity-[0.05] blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-lime-400 opacity-[0.04] blur-3xl pointer-events-none" />
@@ -66,7 +66,7 @@ const ItzGalaxyMCNetwork: React.FC = () => {
         </section>
 
         {/* ── Features ─────────────────────────────────────────────────── */}
-        <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 text-black py-20 px-6 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 text-black -mt-20 pt-40 pb-20 px-6 overflow-hidden">
           <div className="grid-pattern absolute inset-0 pointer-events-none" />
           <div className="relative z-10 container mx-auto max-w-5xl">
             <div className="text-center mb-12 anim-fade-up">
