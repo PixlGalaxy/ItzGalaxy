@@ -139,7 +139,7 @@ const PixlTOS: React.FC = () => {
       <title>ItzGalaxy - PIXL Terms of Service</title>
 
       {/* ── Header ───────────────────────────────────────────────────── */}
-      <section className="relative bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
+      <section className="relative z-10 bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
         <div className="dot-pattern absolute inset-0 opacity-50 pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-violet-500 opacity-[0.07] blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-cyan-400 opacity-[0.05] blur-3xl pointer-events-none" />
@@ -152,7 +152,7 @@ const PixlTOS: React.FC = () => {
       </section>
 
       {/* ── Terms of Service ─────────────────────────────────────────── */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 py-16 px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 -mt-20 pt-36 pb-16 px-6 overflow-hidden">
         <div className="grid-pattern absolute inset-0 pointer-events-none" />
         <div className="relative z-10 container mx-auto max-w-3xl">
           <div className="flex items-center gap-3 mb-8 anim-fade-up">
