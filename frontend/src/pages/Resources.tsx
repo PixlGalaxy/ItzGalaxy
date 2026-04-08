@@ -39,7 +39,7 @@ const resources = [
     img: '/Minecraft/DiamondOreBlock.webp',
     alt: 'Minecraft World Files',
     label: 'Minecraft\nWorld Map Files',
-    badge: 'Download',
+    badge: 'Webin Cloud Server',
     badgeColor: 'bg-sky-100 text-sky-700',
     accentBar: 'from-sky-400 to-blue-500',
     cardBg: 'bg-gradient-to-b from-sky-50 to-blue-50',
@@ -55,7 +55,7 @@ const ResourcesPage: React.FC = () => {
       <title>ItzGalaxy - Resources</title>
 
       {/* ── Header ───────────────────────────────────────────────────── */}
-      <section className="relative bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
+      <section className="relative z-10 bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
         <div className="dot-pattern absolute inset-0 opacity-50 pointer-events-none" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-[#00ffae] opacity-[0.04] blur-3xl pointer-events-none" />
         <div className="relative z-10 text-center anim-fade-up">
@@ -71,7 +71,7 @@ const ResourcesPage: React.FC = () => {
       </section>
 
       {/* ── Grid ─────────────────────────────────────────────────────── */}
-      <main className="relative bg-gradient-to-br from-slate-50 to-gray-100 text-black py-20 px-6 flex-1 overflow-hidden">
+      <main className="relative bg-gradient-to-br from-slate-50 to-gray-100 text-black -mt-20 pt-40 pb-20 px-6 flex-1 overflow-hidden">
         <div className="grid-pattern absolute inset-0 pointer-events-none" />
         <div className="relative z-10 container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
