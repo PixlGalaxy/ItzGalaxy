@@ -46,7 +46,7 @@ const About: React.FC = () => {
       <title>ItzGalaxy - About</title>
 
       {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <section className="relative bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
+      <section className="relative z-10 bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
         <div className="dot-pattern absolute inset-0 opacity-50 pointer-events-none" />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-violet-600 opacity-[0.06] blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[350px] h-[350px] rounded-full bg-[#00ffae] opacity-[0.04] blur-3xl pointer-events-none" />
@@ -61,7 +61,7 @@ const About: React.FC = () => {
       </section>
 
       {/* ── Who is Galaxy ────────────────────────────────────────────── */}
-      <section className="relative bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 text-black py-20 px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 text-black -mt-20 pt-40 pb-20 px-6 overflow-hidden">
         <div className="grid-pattern absolute inset-0 pointer-events-none" />
         <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-teal-300 opacity-20 blur-3xl pointer-events-none" />
         <div className="relative z-10 container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-12">
@@ -302,11 +302,12 @@ const About: React.FC = () => {
       </section>
 
       {/* ── What Gets Built ──────────────────────────────────────────── */}
-      <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 text-black py-20 px-6 overflow-hidden">
-        <div className="grid-pattern absolute inset-0 pointer-events-none" />
+      <section className="relative bg-hero-dark text-white py-20 px-6 overflow-hidden">
+        <div className="dot-pattern absolute inset-0 opacity-30 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full bg-violet-500 opacity-[0.04] blur-3xl pointer-events-none" />
         <div className="relative z-10 container mx-auto max-w-6xl">
           <div className="text-center mb-12 anim-fade-up">
-            <p className="text-gray-500 text-sm font-semibold tracking-[0.2em] uppercase mb-3">Categories</p>
+            <p className="text-[#00ffae] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Categories</p>
             <h2 className="text-3xl md:text-4xl font-extrabold mb-3">What Gets Built</h2>
             <div className="section-title-bar w-32 mx-auto" />
           </div>
@@ -328,19 +329,20 @@ const About: React.FC = () => {
       </section>
 
       {/* ── Contact ──────────────────────────────────────────────────── */}
-      <section className="relative bg-hero-dark text-white py-20 px-6 overflow-hidden">
-        <div className="dot-pattern absolute inset-0 opacity-30 pointer-events-none" />
+      <section className="relative bg-gradient-to-br from-slate-50 to-gray-100 text-black py-20 px-6 overflow-hidden">
+        <div className="grid-pattern absolute inset-0 pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-gray-300 opacity-30 blur-3xl pointer-events-none" />
         <div className="relative z-10 container mx-auto max-w-2xl text-center anim-fade-up">
-          <p className="text-[#00ffae] text-sm font-semibold tracking-[0.2em] uppercase mb-3">Contact</p>
+          <p className="text-gray-500 text-sm font-semibold tracking-[0.2em] uppercase mb-3">Contact</p>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Get In Touch</h2>
           <div className="section-title-bar w-24 mx-auto mb-6" />
-          <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-8">
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
             Questions, suggestions, or just want to say hi?
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="mailto:webservices.itzgalaxy@gmail.com"
-              className="inline-flex items-center gap-2.5 bg-white/10 border border-white/20 text-white text-sm font-semibold px-5 py-3 rounded-xl hover:bg-white/20 transition-colors"
+              className="inline-flex items-center gap-2.5 bg-gray-900 text-white text-sm font-semibold px-5 py-3 rounded-xl hover:bg-gray-700 transition-colors"
             >
               <LucideIcons.Mail className="w-5 h-5" strokeWidth={1.5} />
               contact@itzgalaxy.com
@@ -349,7 +351,7 @@ const About: React.FC = () => {
               href="https://github.com/PixlGalaxy"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-white/10 border border-white/20 text-white text-sm font-semibold px-5 py-3 rounded-xl hover:bg-white/20 transition-colors"
+              className="inline-flex items-center gap-2.5 bg-gray-900 text-white text-sm font-semibold px-5 py-3 rounded-xl hover:bg-gray-700 transition-colors"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.505.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.338c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0022 12.021C22 6.484 17.522 2 12 2z" />
