@@ -270,6 +270,7 @@ const About: React.FC = () => {
                       <p className="text-gray-600">2× WD Black SN7100 2 TB NVMe <span className="text-xs text-gray-400">(array)</span></p>
                       <p className="text-gray-600">2× Seagate IronWolf 4 TB RAID 1 <span className="text-xs text-gray-400">(pool)</span></p>
                       <p className="text-gray-600">2× WD Black SN7100 4 TB NVMe RAID 1 <span className="text-xs text-gray-400">(pool)</span></p>
+                      <p className="text-gray-600">1× HP Enterprise 2 TB <span className="text-xs text-gray-400">(pool)</span></p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
