@@ -64,7 +64,7 @@ const DurazznoApp: React.FC = () => (
     <title>ItzGalaxy - Durazzno App</title>
 
     {/* ── Hero ─────────────────────────────────────────────────────── */}
-    <section className="relative bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
+    <section className="relative z-10 bg-hero-dark text-white py-24 px-6 pt-32 overflow-hidden clip-diagonal">
       <div className="dot-pattern absolute inset-0 opacity-50 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-amber-400 opacity-[0.05] blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-orange-400 opacity-[0.04] blur-3xl pointer-events-none" />
@@ -87,9 +87,9 @@ const DurazznoApp: React.FC = () => (
     {sections.map((s, idx) => (
       <section
         key={idx}
-        className={`relative text-${s.dark ? 'white' : 'black'} py-20 px-6 overflow-hidden ${
+        className={`relative text-${s.dark ? 'white' : 'black'} px-6 overflow-hidden ${
           s.dark ? 'bg-hero-dark' : 'bg-gradient-to-br from-slate-50 to-gray-100'
-        }`}
+        } ${idx === 0 ? '-mt-20 pt-40 pb-20' : 'py-20'}`}
       >
         {s.dark ? (
           <div className="dot-pattern absolute inset-0 opacity-30 pointer-events-none" />
