@@ -1,0 +1,19 @@
+{
+  "name": "itzgalaxy-backend",
+  "version": "1.0.0",
+  "description": "ItzGalaxy Backend API",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["itzgalaxy", "api"],
+  "author": "Galaxy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}
