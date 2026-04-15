@@ -9,3 +9,13 @@ updates:
       frontend-deps:
         patterns:
           - "*"
+
+  - package-ecosystem: "npm"
+    directory: "/backend"
+    open-pull-requests-limit: 15
+    schedule:
+      interval: "daily"
+    groups:
+      backend-deps:
+        patterns:
+          - "*"
