@@ -1,0 +1,39 @@
+name: Dependabot Auto-Merge
+
+on: pull_request
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+
+    steps:
+      - name: Fetch Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # For grouped PRs, update-type is the highest bump in the group,
+      # so a group containing any major update is treated as major.
+      - name: Enable auto-merge for minor and patch updates
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Flag major updates for manual review
+        if: steps.metadata.outputs.update-type == 'version-update:semver-major'
+        run: |
+          gh label create "major-update" --color B60205 --description "Major dependency update, requires manual review" 2>/dev/null || true
+          gh pr edit "$PR_URL" --add-label "major-update"
+          gh pr comment "$PR_URL" --body "⚠️ This PR contains a **major** version update and was not auto-merged. Please review it manually."
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
