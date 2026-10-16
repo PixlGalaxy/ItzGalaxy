@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "lucide-react": "^1.55.0",
+    "lucide-react": "^1.56.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-router-dom": "^7.18.4"
@@ -26,7 +26,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
     "globals": "^17.13.0",
-    "postcss": "^8.5.29",
+    "postcss": "^8.5.30",
     "tailwindcss": "^4.2.2",
     "typescript": "~7.0.2",
     "typescript-eslint": "^8.71.2",
