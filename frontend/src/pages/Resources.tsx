@@ -35,7 +35,7 @@ const resources = [
     external: false,
   },
   {
-    href: 'https://webincloud.itzgalaxy.com/public/folder/vrdm294cnu6g6yw1zwny3q/Minecraft%20Worlds%20Downloads',
+    href: 'https://webincloud.itzgalaxy.com/public/itzgalaxy/ItzGalaxy/Minecraft%20Worlds%20Downloads',
     img: '/Minecraft/DiamondOreBlock.webp',
     alt: 'Minecraft World Files',
     label: 'Minecraft\nWorld Map Files',
