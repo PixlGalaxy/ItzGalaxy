@@ -3,8 +3,8 @@
       "_type": "dir",
       "durazznoapp": {
         "type": "file",
-        "url": "https://example.com/DurazznoApp.zip",
-        "desc": "Portable Durazzno App"
+        "url": "https://webincloud.itzgalaxy.com/backend/api/public/durazznoapp/DurazznoApp/Main/DurazznoApp%20Online%20Installer.exe/download?inline=1&path=",
+        "desc": "Durazzno App installer"
       },
       "pixl": {
         "type": "file",

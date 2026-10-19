@@ -59,7 +59,7 @@ const Home: React.FC = () => {
               <div className="section-title-bar w-32 mb-5" />
               <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
                 Durazzno App offers the most useful tools — all packed into a single app.
-                Just a bit of Python here and some libraries there, and you're set for everything you'll need.
+                It lives in the tray, keeps itself up to date and installs in a minute.
               </p>
               <a href="/durazznoapp" className="itzgalaxy-action-buttons inline-block">
                 <span>Durazzno App Page</span>

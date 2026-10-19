@@ -12,7 +12,7 @@ const cards = [
     icon: <LucideIcons.AppWindow className="w-9 h-9 text-amber-500" strokeWidth={1.5} />,
     bg: 'bg-amber-50',
     title: 'Desktop Apps',
-    desc: 'Durazzno App bundles the most useful utilities into a single Python-powered Windows application.',
+    desc: 'Durazzno App bundles the most useful PC tools into one Windows app that keeps itself up to date.',
   },
   {
     icon: <LucideIcons.Server className="w-9 h-9 text-emerald-600" strokeWidth={1.5} />,
