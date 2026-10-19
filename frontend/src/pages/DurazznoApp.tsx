@@ -145,7 +145,7 @@ const DurazznoApp: React.FC = () => (
             Download the full install bundle and get started in minutes. All the tools you need, in one package.
           </p>
           <a
-            href="https://webincloud.itzgalaxy.com:653/public/file/ahqBJGCZJUGaQ_a8NtVOCA/Durazzno%20App%20Install%20Bundle.zip"
+            href="http://192.168.0.150:5002/backend/api/public/durazznoapp/DurazznoApp/Main/DurazznoApp%20Online%20Installer.exe/download?inline=1&path="
             className="itzgalaxy-action-buttons inline-block"
           >
             <span>Download Durazzno App</span>
