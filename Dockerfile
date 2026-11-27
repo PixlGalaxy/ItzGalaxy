@@ -1,5 +1,5 @@
 # 1: Frontend Build
-FROM node:24.22.3-alpine AS build-frontend
+FROM node:26.13.1-alpine AS build-frontend
 WORKDIR /app/frontend
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm install --legacy-peer-deps
@@ -7,14 +7,14 @@ COPY frontend ./
 RUN npm run build
 
 # 2: Backend Build
-FROM node:24.22.3-alpine AS build-backend
+FROM node:26.13.1-alpine AS build-backend
 WORKDIR /app/backend
 COPY backend/package.json backend/package-lock.json ./
 RUN npm install --legacy-peer-deps
 COPY backend ./
 
 # 3: Final Image Nginx And Node.js
-FROM node:24.22.3-alpine
+FROM node:26.13.1-alpine
 WORKDIR /app
 
 # Install Nginx
