@@ -380,3 +380,99 @@ to {
   pointer-events: none;
   z-index: 1;
 }
+
+/* ####################################################################### */
+/* Modern tweaks: diagonal flow, richer colors, glass navbar               */
+
+:root {
+  --cut: clamp(32px, 5vw, 84px);
+  --accent: #00ffae;
+}
+
+/* Glass navbar keeps the same tone but lets the page scroll under it */
+.navbar-color {
+  background-color: rgba(12, 10, 26, 0.78);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+}
+
+/* Deeper, cleaner dark gradient (violet into a hint of brand green) */
+.bg-hero-dark {
+  background:
+    radial-gradient(120% 80% at 100% 100%, rgba(0, 255, 174, 0.07), transparent 60%),
+    linear-gradient(135deg, #0b0920 0%, #1b1048 50%, #0a1d17 100%);
+}
+
+/* Diagonal dividers between every section, alternating direction.
+   The first two sections already meet on the hero's diagonal. */
+section.relative + section.relative + section {
+  margin-top: calc(var(--cut) * -1);
+  padding-top: calc(5rem + var(--cut));
+  clip-path: polygon(0 0, 100% var(--cut), 100% 100%, 0 100%);
+}
+
+section.relative + section.relative + section:nth-of-type(even) {
+  clip-path: polygon(0 var(--cut), 100% 0, 100% 100%, 0 100%);
+}
+
+/* Footer joins the flow with its own diagonal */
+section + footer,
+main + footer {
+  position: relative;
+  margin-top: calc(var(--cut) * -0.6);
+  padding-top: calc(1.25rem + var(--cut) * 0.6) !important;
+  clip-path: polygon(0 calc(var(--cut) * 0.6), 100% 0, 100% 100%, 0 100%);
+  border-top: 0 !important;
+  background: linear-gradient(90deg, #0c0a1a, #140d33);
+}
+
+/* Main CTA: same skewed shape, plus a light sweep and brand glow on hover */
+.itzgalaxy-action-buttons {
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.85);
+}
+
+.itzgalaxy-action-buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transition: left 0.55s ease;
+  pointer-events: none;
+}
+
+.itzgalaxy-action-buttons:hover {
+  transform: skew(-30deg) translate(-2px, -2px);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.85), 0 0 28px rgba(0, 255, 174, 0.35);
+}
+
+.itzgalaxy-action-buttons:hover::before {
+  left: 120%;
+}
+
+.itzgalaxy-action-buttons:active {
+  transform: skew(-30deg) translate(2px, 2px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.85);
+}
+
+/* Resource tiles on the home page */
+.resource-tile {
+  transform: skew(-8deg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.resource-tile > * {
+  transform: skew(8deg);
+}
+
+.resource-tile:hover {
+  transform: skew(-8deg) translateY(-4px);
+  border-color: #00ffae;
+  box-shadow: 6px 6px 0 #0c0a1a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .itzgalaxy-action-buttons::before { display: none; }
+}

@@ -105,11 +105,22 @@ const Home: React.FC = () => {
           <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-blue-300 opacity-20 blur-3xl pointer-events-none" />
           <div className="relative z-10 container mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-5/12 flex justify-center anim-slide-left">
-              <div className="w-56 md:w-72 h-56 md:h-72 flex items-center justify-center">
-                <LucideIcons.Server
-                  className="w-full h-full text-indigo-600 opacity-60 transition-transform duration-500 hover:scale-105"
-                  strokeWidth={0.8}
-                />
+              <div className="grid grid-cols-2 gap-4 w-full max-w-sm">
+                {[
+                  { Icon: LucideIcons.Bot, label: 'Bot Links' },
+                  { Icon: LucideIcons.Map, label: 'MC Worlds' },
+                  { Icon: LucideIcons.Download, label: 'Downloads' },
+                  { Icon: LucideIcons.Server, label: 'Servers' },
+                ].map(({ Icon, label }) => (
+                  <a
+                    key={label}
+                    href="/resources"
+                    className="resource-tile bg-white border-2 border-[#0c0a1a] p-5 flex flex-col items-center gap-2"
+                  >
+                    <Icon className="w-9 h-9 text-indigo-600" strokeWidth={1.6} />
+                    <span className="text-sm font-bold uppercase tracking-wide">{label}</span>
+                  </a>
+                ))}
               </div>
             </div>
             <div className="md:w-7/12 anim-slide-right anim-delay-1">
